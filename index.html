@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Anup Dhakal</title>
+  <title>Anup's Website</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -52,10 +52,10 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="www.x.com" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.facebook.com/anup.dhakal.545" class="facebook"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/anoop057/" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/anup-dhakal-198998211/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.youtube.com/@THESPORTINGTECHIE" class="youtube"><i class="bi bi-youtube"></i></a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -63,6 +63,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+        <li><a href="#projects"><i class="bi bi-hdd-stack navicon"></i> Projects</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
     </nav>
@@ -78,7 +79,7 @@
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Anup Dhakal</h2>
-        <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer">Student</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+        <p>I'm <span class="typed" data-typed-items="Student, Developer, Freelancer, Photographer"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
       </div>
 
     </section><!-- /Hero Section -->
@@ -89,7 +90,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>About</h2>
-        <p>I am Anup Dhakal currently studying computer enginering in Khwopa College of Engineering in eighth Semester</p>
+        <p>I am Anup Dhakal currently studying computer enginering in Khwopa College of Engineering in eighth Semester.</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -104,72 +105,48 @@
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>23 December 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span id="birthday">23 December 2001</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Birth Place:</strong> <span>Tansen,Palpa</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Current Address</strong> <span>Kathmandu</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>anupdhakal1.com.np</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>98642400xx</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Kathmandu,Nepal</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span>23</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Age:</strong> <span id="age"></span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>Bachelor's</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>anup.dkal@gmail.com</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
             </div>
+            <script>
+              // Function to calculate and display the age
+              function updateAge() {
+                const birthday = new Date("2001-12-23"); // DOB in YYYY-MM-DD format
+                const today = new Date();
+                
+                // Calculate the difference in time
+                const diffTime = today - birthday;
+            
+                // Calculate the age in years and days
+                const ageYears = Math.floor(diffTime / (1000 * 60 * 60 * 24 * 365.25)); 
+                const ageDays = Math.floor((diffTime % (1000 * 60 * 60 * 24 * 365.25)) / (1000 * 60 * 60 * 24));
+            
+                // Display the result in the age section
+                document.getElementById("age").textContent = `${ageYears} years and ${ageDays} days`;
+              }
+              updateAge();
+            </script>
           </div>
         </div>
 
       </div>
+      
 
     </section><!-- /About Section -->
 
-    <!-- Stats Section -->
-    <section id="stats" class="stats section">
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-4">
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
-              <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Happy Clients</strong> <span></span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-journal-richtext"></i>
-              <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Projects</strong> <span></span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-headset"></i>
-              <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hours Of Support</strong> <span></span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-          <div class="col-lg-3 col-md-6">
-            <div class="stats-item">
-              <i class="bi bi-people"></i>
-              <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1" class="purecounter"></span>
-              <p><strong>Hard Workers</strong> <span></span></p>
-            </div>
-          </div><!-- End Stats Item -->
-
-        </div>
-
-      </div>
-
-    </section><!-- /Stats Section -->
+    
 
     <!-- Skills Section -->
     <section id="skills" class="skills section light-background">
@@ -177,7 +154,6 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Skills</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -259,23 +235,36 @@
         <div class="resume-item pb-0">
           <h4>Anup Dhakal</h4>
           <p><em>Proactive and detail-oriented final-year student working on SmartFlow: Intelligent Traffic Management System. Experienced in YOLO, OpenCV, PyTorch, and Python development, with a focus on real-time traffic monitoring, vehicle detection, and speed analysis.</em></p>
-          <ul>
-            <li>Based in Kathmandu,Nepal</li>
-            <li>98642400xx</li>
-            <li>anup.dkal@gmail.com</li>
-          </ul>
+          
         </div><!-- End Resume Item -->
 
         <h3 class="resume-title">Education</h3>
         <div class="resume-item">
-          <h4>Bachelor of Computer Engineering]</h4>
-          <h5>2025</h5>
-          <p><em>Khwopa College of Engineerinf, Bhaktapur,Bagmati State</em></p>
+          <h4>Bachelor of Computer Engineering</h4>
+          <h5>2020-Present</h5>
+          <p><em>Khwopa College of Engineering, Bhaktapur,Bagmati State</em></p>
           <p>Focused on developing innovative solutions for real-world problems, with a specialization in machine learning, computer vision, and intelligent systems. Worked on multiple projects involving video processing, dataset management, and deep learning.</p>
         </div><!-- End Resume Item -->
-
+        <div class="resume-item">
+          <h4>Science Faculty</h4>
+          <h5>2018-2020</h5>
+          <p><em>
+            St.Xavier's School ,Jawalakhel
+            </em></p>
+          <p></p>
+        </div><!-- End Resume Item -->
+        
+        <div class="resume-item">
+          <h4>School</h4>
+          <h5>2011-2018</h5>
+          <p><em>
+            St. Capitanio School,Palpa
+            </em></p>
+          <p></p>
+        </div><!-- End Resume Item -->
       </div>
 
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
         <div class="resume-item">
           <h4>Python Developer (Freelance)</h4>
           <h5>2024-2025</h5>
@@ -286,8 +275,7 @@
             <li>Contributed to multiple projects requiring custom modifications of VGG16 and other PyTorch-based models.</li>
           </ul>
         </div><!-- End Resume Item -->
-
-      </div>
+        </div>
 
     </div>
 
@@ -304,7 +292,41 @@
 
     </section><!-- /Resume Section -->
 
-    
+    <!-- Services Section -->
+    <section id="projects" class="services section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="bi bi-briefcase"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link"> NEPSE Stock Prediction using LSTM</a></h4>
+              <p class="description">Minor project done as of requirement of Computer Engineering Sixth Semester Curriculum which is based on Deep Learning model LSTM.</p>
+            </div>
+          </div>
+          <!-- End Service Item -->
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="bi bi-card-checklist"></i></div>
+            <div>
+              <h4 class="title"><a href="service-details.html" class="stretched-link">SmartFlow: Intelligent Traffic Management System for Speed Monitoring and Adaptive Signal Control</a></h4>
+              <p class="description">Currently working Major project of BCT 4th year </p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Services Section -->
+
 
     <!-- Contact Section -->
     <section id="contact" class="contact section">
@@ -324,10 +346,8 @@
               <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h3>Kathmandu</h3>
-                  <p>Purano Sinamangal
-                    पुरानो सिनामंगल
-                    Kathmandu 44600</p>
+                  <h3>Palpa</h3>
+                  <p>Tansen</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -346,9 +366,9 @@
                   <p>anup.dkal@gmail.com</p>
                 </div>
               </div><!-- End Info Item -->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28220.28812605456!2d83.52048555191486!3d27.85480026371584!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39967f7040b82b1d%3A0xb7142bb9805c4488!2sTansen%2032500!5e0!3m2!1sen!2snp!4v1736692716353!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" frameborder="0" style="border:0; width: 100%; height: 270px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
+             </div>
           </div>
 
           <div class="col-lg-7">
