@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/rolldice/static/css/main.beb70bc3.css",
+    "main.js": "/rolldice/static/js/main.9a1a819d.js",
+    "static/js/453.be64629a.chunk.js": "/rolldice/static/js/453.be64629a.chunk.js",
+    "static/media/6.png": "/rolldice/static/media/6.7314092cf2e027f0861f.png",
+    "static/media/5.png": "/rolldice/static/media/5.b0b1de7586254b09e0c6.png",
+    "static/media/4.png": "/rolldice/static/media/4.9c77d96dce9d714afccd.png",
+    "static/media/2.png": "/rolldice/static/media/2.7b2573a587b14babc4a8.png",
+    "static/media/3.png": "/rolldice/static/media/3.6f00af050bff1470d734.png",
+    "static/media/1.png": "/rolldice/static/media/1.2b4a1acc1ae8dc484445.png",
+    "static/media/logo.svg": "/rolldice/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/rolldice/index.html",
+    "main.beb70bc3.css.map": "/rolldice/static/css/main.beb70bc3.css.map",
+    "main.9a1a819d.js.map": "/rolldice/static/js/main.9a1a819d.js.map",
+    "453.be64629a.chunk.js.map": "/rolldice/static/js/453.be64629a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.beb70bc3.css",
+    "static/js/main.9a1a819d.js"
+  ]
+}
